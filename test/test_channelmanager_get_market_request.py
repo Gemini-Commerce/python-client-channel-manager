@@ -42,6 +42,8 @@ class TestChannelmanagerGetMarketRequest(unittest.TestCase):
             )
         else:
             return ChannelmanagerGetMarketRequest(
+                tenant_id = '',
+                id = '',
         )
         """
 

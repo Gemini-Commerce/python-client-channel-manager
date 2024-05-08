@@ -19,7 +19,7 @@ import re  # noqa: F401
 import json
 
 
-from typing import Any, ClassVar, Dict, List, Optional
+from typing import Any, ClassVar, Dict, List
 from pydantic import BaseModel, StrictStr
 from pydantic import Field
 try:
@@ -31,8 +31,8 @@ class ChannelmanagerGetChannelWithAssociationsRequest(BaseModel):
     """
     ChannelmanagerGetChannelWithAssociationsRequest
     """ # noqa: E501
-    tenant_id: Optional[StrictStr] = Field(default=None, alias="tenantId")
-    id: Optional[StrictStr] = None
+    tenant_id: StrictStr = Field(alias="tenantId")
+    id: StrictStr
     __properties: ClassVar[List[str]] = ["tenantId", "id"]
 
     model_config = {

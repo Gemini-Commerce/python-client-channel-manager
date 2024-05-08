@@ -43,6 +43,9 @@ class TestChannelmanagerCreateAssociationRequest(unittest.TestCase):
             )
         else:
             return ChannelmanagerCreateAssociationRequest(
+                tenant_id = '',
+                channel_grn = '',
+                market_grn = '',
         )
         """
 

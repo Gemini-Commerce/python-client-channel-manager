@@ -45,12 +45,12 @@ class TestChannelmanagerUpdateMarketRequest(unittest.TestCase):
                     countries = [
                         'COUNTRY_CODE_UNKNOWN'
                         ], ),
-                payload_mask = [
-                    ''
-                    ]
+                payload_mask = ''
             )
         else:
             return ChannelmanagerUpdateMarketRequest(
+                tenant_id = '',
+                id = '',
         )
         """
 

@@ -32,10 +32,10 @@ class ChannelmanagerCreateMarketRequest(BaseModel):
     """
     ChannelmanagerCreateMarketRequest
     """ # noqa: E501
-    tenant_id: Optional[StrictStr] = Field(default=None, alias="tenantId")
-    name: Optional[StrictStr] = None
+    tenant_id: StrictStr = Field(alias="tenantId")
+    name: StrictStr
     description: Optional[StrictStr] = None
-    countries: Optional[List[ChannelmanagerCountryCode]] = None
+    countries: List[ChannelmanagerCountryCode]
     __properties: ClassVar[List[str]] = ["tenantId", "name", "description", "countries"]
 
     model_config = {

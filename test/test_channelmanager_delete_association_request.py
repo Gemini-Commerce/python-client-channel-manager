@@ -42,6 +42,8 @@ class TestChannelmanagerDeleteAssociationRequest(unittest.TestCase):
             )
         else:
             return ChannelmanagerDeleteAssociationRequest(
+                tenant_id = '',
+                id = '',
         )
         """
 

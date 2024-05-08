@@ -49,12 +49,12 @@ class TestChannelmanagerUpdateChannelRequest(unittest.TestCase):
                     website = channelmanager.models.channelmanager_channel_type_website.channelmanagerChannelTypeWebsite(
                         domain = '', ), 
                     status = 'CH_STATUS_UNKNOWN', ),
-                payload_mask = [
-                    ''
-                    ]
+                payload_mask = ''
             )
         else:
             return ChannelmanagerUpdateChannelRequest(
+                tenant_id = '',
+                id = '',
         )
         """
 

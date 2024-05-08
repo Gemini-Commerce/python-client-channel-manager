@@ -51,6 +51,9 @@ class TestChannelmanagerCreateChannelRequest(unittest.TestCase):
             )
         else:
             return ChannelmanagerCreateChannelRequest(
+                tenant_id = '',
+                code = '',
+                name = '',
         )
         """
 

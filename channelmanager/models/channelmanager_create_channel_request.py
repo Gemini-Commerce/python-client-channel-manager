@@ -35,10 +35,10 @@ class ChannelmanagerCreateChannelRequest(BaseModel):
     """
     ChannelmanagerCreateChannelRequest
     """ # noqa: E501
-    tenant_id: Optional[StrictStr] = Field(default=None, alias="tenantId")
-    code: Optional[StrictStr] = None
+    tenant_id: StrictStr = Field(alias="tenantId")
+    code: StrictStr
     image: Optional[StrictStr] = None
-    name: Optional[StrictStr] = None
+    name: StrictStr
     default_language: Optional[ChannelmanagerLanguageCode] = Field(default=None, alias="defaultLanguage")
     settings: Optional[ChannelmanagerChannelSettings] = None
     website: Optional[ChannelmanagerChannelTypeWebsite] = None

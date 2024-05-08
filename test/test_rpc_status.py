@@ -40,9 +40,9 @@ class TestRpcStatus(unittest.TestCase):
                 code = 56,
                 message = '',
                 details = [
-                    channelmanager.models.protobuf_any.protobufAny(
-                        @type = '', 
-                        value = 'YQ==', )
+                    {
+                        'key' : None
+                        }
                     ]
             )
         else:

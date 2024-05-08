@@ -320,7 +320,6 @@ class ChannelManagerApi:
 
         # authentication setting
         _auth_settings: List[str] = [
-            'standardAuthorization'
         ]
 
         return self.api_client.param_serialize(
@@ -591,7 +590,6 @@ class ChannelManagerApi:
 
         # authentication setting
         _auth_settings: List[str] = [
-            'standardAuthorization'
         ]
 
         return self.api_client.param_serialize(
@@ -862,7 +860,6 @@ class ChannelManagerApi:
 
         # authentication setting
         _auth_settings: List[str] = [
-            'standardAuthorization'
         ]
 
         return self.api_client.param_serialize(
@@ -1133,7 +1130,6 @@ class ChannelManagerApi:
 
         # authentication setting
         _auth_settings: List[str] = [
-            'standardAuthorization'
         ]
 
         return self.api_client.param_serialize(
@@ -1404,7 +1400,6 @@ class ChannelManagerApi:
 
         # authentication setting
         _auth_settings: List[str] = [
-            'standardAuthorization'
         ]
 
         return self.api_client.param_serialize(
@@ -1675,7 +1670,6 @@ class ChannelManagerApi:
 
         # authentication setting
         _auth_settings: List[str] = [
-            'standardAuthorization'
         ]
 
         return self.api_client.param_serialize(
@@ -1946,7 +1940,6 @@ class ChannelManagerApi:
 
         # authentication setting
         _auth_settings: List[str] = [
-            'standardAuthorization'
         ]
 
         return self.api_client.param_serialize(
@@ -2217,7 +2210,6 @@ class ChannelManagerApi:
 
         # authentication setting
         _auth_settings: List[str] = [
-            'standardAuthorization'
         ]
 
         return self.api_client.param_serialize(
@@ -2488,7 +2480,6 @@ class ChannelManagerApi:
 
         # authentication setting
         _auth_settings: List[str] = [
-            'standardAuthorization'
         ]
 
         return self.api_client.param_serialize(
@@ -2759,7 +2750,6 @@ class ChannelManagerApi:
 
         # authentication setting
         _auth_settings: List[str] = [
-            'standardAuthorization'
         ]
 
         return self.api_client.param_serialize(
@@ -3030,7 +3020,6 @@ class ChannelManagerApi:
 
         # authentication setting
         _auth_settings: List[str] = [
-            'standardAuthorization'
         ]
 
         return self.api_client.param_serialize(
@@ -3301,7 +3290,6 @@ class ChannelManagerApi:
 
         # authentication setting
         _auth_settings: List[str] = [
-            'standardAuthorization'
         ]
 
         return self.api_client.param_serialize(
@@ -3572,7 +3560,6 @@ class ChannelManagerApi:
 
         # authentication setting
         _auth_settings: List[str] = [
-            'standardAuthorization'
         ]
 
         return self.api_client.param_serialize(
@@ -3843,7 +3830,6 @@ class ChannelManagerApi:
 
         # authentication setting
         _auth_settings: List[str] = [
-            'standardAuthorization'
         ]
 
         return self.api_client.param_serialize(
@@ -4114,7 +4100,6 @@ class ChannelManagerApi:
 
         # authentication setting
         _auth_settings: List[str] = [
-            'standardAuthorization'
         ]
 
         return self.api_client.param_serialize(
@@ -4385,7 +4370,6 @@ class ChannelManagerApi:
 
         # authentication setting
         _auth_settings: List[str] = [
-            'standardAuthorization'
         ]
 
         return self.api_client.param_serialize(

@@ -66,12 +66,6 @@ configuration = channelmanager.Configuration(
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
 
-# Configure API key authorization: standardAuthorization
-configuration.api_key['standardAuthorization'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['standardAuthorization'] = 'Bearer'
-
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -157,14 +151,7 @@ Class | Method | HTTP request | Description
 <a id="documentation-for-authorization"></a>
 ## Documentation For Authorization
 
-
-Authentication schemes defined for the API:
-<a id="standardAuthorization"></a>
-### standardAuthorization
-
-- **Type**: API key
-- **API key parameter name**: Authorization
-- **Location**: HTTP header
+Endpoints do not require authorization.
 
 
 ## Author

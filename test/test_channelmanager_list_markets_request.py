@@ -43,6 +43,7 @@ class TestChannelmanagerListMarketsRequest(unittest.TestCase):
             )
         else:
             return ChannelmanagerListMarketsRequest(
+                tenant_id = '',
         )
         """
 

@@ -31,7 +31,7 @@ class ChannelmanagerListChannelsRequest(BaseModel):
     """
     ChannelmanagerListChannelsRequest
     """ # noqa: E501
-    tenant_id: Optional[StrictStr] = Field(default=None, alias="tenantId")
+    tenant_id: StrictStr = Field(alias="tenantId")
     page_size: Optional[StrictInt] = Field(default=None, description="The number of items to return per page. If not specified, it will returns all items.", alias="pageSize")
     page_token: Optional[StrictStr] = Field(default=None, alias="pageToken")
     __properties: ClassVar[List[str]] = ["tenantId", "pageSize", "pageToken"]

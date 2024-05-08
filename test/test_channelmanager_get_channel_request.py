@@ -42,6 +42,8 @@ class TestChannelmanagerGetChannelRequest(unittest.TestCase):
             )
         else:
             return ChannelmanagerGetChannelRequest(
+                tenant_id = '',
+                id = '',
         )
         """
 

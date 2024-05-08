@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**tenant_id**| **str** |   | [optional]
+**tenant_id**| **str** |   |
 **page_size**| **int** | The number of items to return per page. If not specified, it will returns all items.  | [optional]
 **page_token**| **str** |   | [optional]
 

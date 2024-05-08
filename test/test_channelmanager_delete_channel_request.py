@@ -42,6 +42,8 @@ class TestChannelmanagerDeleteChannelRequest(unittest.TestCase):
             )
         else:
             return ChannelmanagerDeleteChannelRequest(
+                tenant_id = '',
+                id = '',
         )
         """
 

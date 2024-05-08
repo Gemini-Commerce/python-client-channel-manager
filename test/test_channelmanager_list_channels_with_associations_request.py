@@ -43,6 +43,7 @@ class TestChannelmanagerListChannelsWithAssociationsRequest(unittest.TestCase):
             )
         else:
             return ChannelmanagerListChannelsWithAssociationsRequest(
+                tenant_id = '',
         )
         """
 

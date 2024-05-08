@@ -37,8 +37,7 @@ class TestProtobufAny(unittest.TestCase):
         model = ProtobufAny()
         if include_optional:
             return ProtobufAny(
-                type = '',
-                value = 'YQ=='
+                type = ''
             )
         else:
             return ProtobufAny(

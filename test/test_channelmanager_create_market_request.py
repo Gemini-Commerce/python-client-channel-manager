@@ -46,6 +46,11 @@ class TestChannelmanagerCreateMarketRequest(unittest.TestCase):
             )
         else:
             return ChannelmanagerCreateMarketRequest(
+                tenant_id = '',
+                name = '',
+                countries = [
+                    'COUNTRY_CODE_UNKNOWN'
+                    ],
         )
         """
 

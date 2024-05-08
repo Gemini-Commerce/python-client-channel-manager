@@ -19,7 +19,7 @@ import re  # noqa: F401
 import json
 
 
-from typing import Any, ClassVar, Dict, List, Optional
+from typing import Any, ClassVar, Dict, List
 from pydantic import BaseModel, StrictStr
 from pydantic import Field
 try:
@@ -31,9 +31,9 @@ class ChannelmanagerCreateAssociationRequest(BaseModel):
     """
     ChannelmanagerCreateAssociationRequest
     """ # noqa: E501
-    tenant_id: Optional[StrictStr] = Field(default=None, alias="tenantId")
-    channel_grn: Optional[StrictStr] = Field(default=None, alias="channelGrn")
-    market_grn: Optional[StrictStr] = Field(default=None, alias="marketGrn")
+    tenant_id: StrictStr = Field(alias="tenantId")
+    channel_grn: StrictStr = Field(alias="channelGrn")
+    market_grn: StrictStr = Field(alias="marketGrn")
     __properties: ClassVar[List[str]] = ["tenantId", "channelGrn", "marketGrn"]
 
     model_config = {

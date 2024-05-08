@@ -32,10 +32,10 @@ class ChannelmanagerUpdateChannelRequest(BaseModel):
     """
     ChannelmanagerUpdateChannelRequest
     """ # noqa: E501
-    tenant_id: Optional[StrictStr] = Field(default=None, alias="tenantId")
-    id: Optional[StrictStr] = None
+    tenant_id: StrictStr = Field(alias="tenantId")
+    id: StrictStr
     payload: Optional[ChannelmanagerUpdateChannelRequestPayload] = None
-    payload_mask: Optional[List[StrictStr]] = Field(default=None, alias="payloadMask")
+    payload_mask: Optional[StrictStr] = Field(default=None, alias="payloadMask")
     __properties: ClassVar[List[str]] = ["tenantId", "id", "payload", "payloadMask"]
 
     model_config = {

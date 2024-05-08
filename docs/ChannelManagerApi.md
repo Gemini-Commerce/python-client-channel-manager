@@ -31,7 +31,6 @@ Create a new association between a channel and a market or entities
 
 ### Example
 
-* Api Key Authentication (standardAuthorization):
 
 ```python
 import time
@@ -52,12 +51,6 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
-
-# Configure API key authorization: standardAuthorization
-configuration.api_key['standardAuthorization'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['standardAuthorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -89,7 +82,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -114,7 +107,6 @@ Create a new channel
 
 ### Example
 
-* Api Key Authentication (standardAuthorization):
 
 ```python
 import time
@@ -135,12 +127,6 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
-
-# Configure API key authorization: standardAuthorization
-configuration.api_key['standardAuthorization'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['standardAuthorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -172,7 +158,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -197,7 +183,6 @@ Create a new market
 
 ### Example
 
-* Api Key Authentication (standardAuthorization):
 
 ```python
 import time
@@ -218,12 +203,6 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
-
-# Configure API key authorization: standardAuthorization
-configuration.api_key['standardAuthorization'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['standardAuthorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -255,7 +234,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -280,7 +259,6 @@ Delete an existing association between a channel and a market or entities
 
 ### Example
 
-* Api Key Authentication (standardAuthorization):
 
 ```python
 import time
@@ -300,12 +278,6 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
-
-# Configure API key authorization: standardAuthorization
-configuration.api_key['standardAuthorization'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['standardAuthorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -337,7 +309,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -362,7 +334,6 @@ Soft delete an existing channel
 
 ### Example
 
-* Api Key Authentication (standardAuthorization):
 
 ```python
 import time
@@ -382,12 +353,6 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
-
-# Configure API key authorization: standardAuthorization
-configuration.api_key['standardAuthorization'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['standardAuthorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -419,7 +384,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -444,7 +409,6 @@ Soft delete an existing market
 
 ### Example
 
-* Api Key Authentication (standardAuthorization):
 
 ```python
 import time
@@ -464,12 +428,6 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
-
-# Configure API key authorization: standardAuthorization
-configuration.api_key['standardAuthorization'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['standardAuthorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -501,7 +459,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -526,7 +484,6 @@ Get an existing channel
 
 ### Example
 
-* Api Key Authentication (standardAuthorization):
 
 ```python
 import time
@@ -547,12 +504,6 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
-
-# Configure API key authorization: standardAuthorization
-configuration.api_key['standardAuthorization'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['standardAuthorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -584,7 +535,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -609,7 +560,6 @@ Get an existing channel with associations
 
 ### Example
 
-* Api Key Authentication (standardAuthorization):
 
 ```python
 import time
@@ -630,12 +580,6 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
-
-# Configure API key authorization: standardAuthorization
-configuration.api_key['standardAuthorization'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['standardAuthorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -667,7 +611,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -692,7 +636,6 @@ Get an existing market
 
 ### Example
 
-* Api Key Authentication (standardAuthorization):
 
 ```python
 import time
@@ -713,12 +656,6 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
-
-# Configure API key authorization: standardAuthorization
-configuration.api_key['standardAuthorization'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['standardAuthorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -750,7 +687,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -775,7 +712,6 @@ Get an existing market with associations
 
 ### Example
 
-* Api Key Authentication (standardAuthorization):
 
 ```python
 import time
@@ -796,12 +732,6 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
-
-# Configure API key authorization: standardAuthorization
-configuration.api_key['standardAuthorization'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['standardAuthorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -833,7 +763,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -858,7 +788,6 @@ List all channels
 
 ### Example
 
-* Api Key Authentication (standardAuthorization):
 
 ```python
 import time
@@ -879,12 +808,6 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
-
-# Configure API key authorization: standardAuthorization
-configuration.api_key['standardAuthorization'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['standardAuthorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -916,7 +839,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -941,7 +864,6 @@ List all channels with associations
 
 ### Example
 
-* Api Key Authentication (standardAuthorization):
 
 ```python
 import time
@@ -962,12 +884,6 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
-
-# Configure API key authorization: standardAuthorization
-configuration.api_key['standardAuthorization'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['standardAuthorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -999,7 +915,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -1024,7 +940,6 @@ List all markets
 
 ### Example
 
-* Api Key Authentication (standardAuthorization):
 
 ```python
 import time
@@ -1045,12 +960,6 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
-
-# Configure API key authorization: standardAuthorization
-configuration.api_key['standardAuthorization'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['standardAuthorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -1082,7 +991,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -1107,7 +1016,6 @@ List all markets with associations
 
 ### Example
 
-* Api Key Authentication (standardAuthorization):
 
 ```python
 import time
@@ -1128,12 +1036,6 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
-
-# Configure API key authorization: standardAuthorization
-configuration.api_key['standardAuthorization'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['standardAuthorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -1165,7 +1067,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -1190,7 +1092,6 @@ Update an existing channel
 
 ### Example
 
-* Api Key Authentication (standardAuthorization):
 
 ```python
 import time
@@ -1211,12 +1112,6 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
-
-# Configure API key authorization: standardAuthorization
-configuration.api_key['standardAuthorization'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['standardAuthorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -1248,7 +1143,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -1273,7 +1168,6 @@ Update an existing market
 
 ### Example
 
-* Api Key Authentication (standardAuthorization):
 
 ```python
 import time
@@ -1294,12 +1188,6 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
-
-# Configure API key authorization: standardAuthorization
-configuration.api_key['standardAuthorization'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['standardAuthorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -1331,7 +1219,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 

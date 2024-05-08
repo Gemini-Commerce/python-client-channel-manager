@@ -19,10 +19,9 @@ import re  # noqa: F401
 import json
 
 
-from typing import Any, ClassVar, Dict, List, Optional, Union
-from pydantic import BaseModel, StrictStr, field_validator
+from typing import Any, ClassVar, Dict, List, Optional
+from pydantic import BaseModel, StrictStr
 from pydantic import Field
-from typing_extensions import Annotated
 try:
     from typing import Self
 except ImportError:
@@ -33,18 +32,8 @@ class ProtobufAny(BaseModel):
     ProtobufAny
     """ # noqa: E501
     type: Optional[StrictStr] = Field(default=None, alias="@type")
-    value: Optional[Union[Annotated[bytes, Field(strict=True)], Annotated[str, Field(strict=True)]]] = None
-    __properties: ClassVar[List[str]] = ["@type", "value"]
-
-    @field_validator('value')
-    def value_validate_regular_expression(cls, value):
-        """Validates the regular expression"""
-        if value is None:
-            return value
-
-        if not re.match(r"^(?:[A-Za-z0-9+\/]{4})*(?:[A-Za-z0-9+\/]{2}==|[A-Za-z0-9+\/]{3}=)?$", value):
-            raise ValueError(r"must validate the regular expression /^(?:[A-Za-z0-9+\/]{4})*(?:[A-Za-z0-9+\/]{2}==|[A-Za-z0-9+\/]{3}=)?$/")
-        return value
+    additional_properties: Dict[str, Any] = {}
+    __properties: ClassVar[List[str]] = ["@type"]
 
     model_config = {
         "populate_by_name": True,
@@ -76,13 +65,20 @@ class ProtobufAny(BaseModel):
         * `None` is only added to the output dict for nullable fields that
           were set at model initialization. Other fields with value `None`
           are ignored.
+        * Fields in `self.additional_properties` are added to the output dict.
         """
         _dict = self.model_dump(
             by_alias=True,
             exclude={
+                "additional_properties",
             },
             exclude_none=True,
         )
+        # puts key-value pairs in additional_properties in the top level
+        if self.additional_properties is not None:
+            for _key, _value in self.additional_properties.items():
+                _dict[_key] = _value
+
         return _dict
 
     @classmethod
@@ -95,9 +91,13 @@ class ProtobufAny(BaseModel):
             return cls.model_validate(obj)
 
         _obj = cls.model_validate({
-            "@type": obj.get("@type"),
-            "value": obj.get("value")
+            "@type": obj.get("@type")
         })
+        # store additional fields in additional_properties
+        for _key in obj.keys():
+            if _key not in cls.__properties:
+                _obj.additional_properties[_key] = obj.get(_key)
+
         return _obj
 
 
