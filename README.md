@@ -66,6 +66,8 @@ configuration = channelmanager.Configuration(
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
 
+configuration.access_token = os.environ["ACCESS_TOKEN"]
+
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -151,7 +153,15 @@ Class | Method | HTTP request | Description
 <a id="documentation-for-authorization"></a>
 ## Documentation For Authorization
 
-Endpoints do not require authorization.
+
+Authentication schemes defined for the API:
+<a id="standardAuthorization"></a>
+### standardAuthorization
+
+- **Type**: OAuth
+- **Flow**: implicit
+- **Authorization URL**: 
+- **Scopes**: N/A
 
 
 ## Author

@@ -31,6 +31,7 @@ Create a new association between a channel and a market or entities
 
 ### Example
 
+* OAuth Authentication (standardAuthorization):
 
 ```python
 import time
@@ -51,6 +52,8 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -82,7 +85,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -107,6 +110,7 @@ Create a new channel
 
 ### Example
 
+* OAuth Authentication (standardAuthorization):
 
 ```python
 import time
@@ -127,6 +131,8 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -158,7 +164,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -183,6 +189,7 @@ Create a new market
 
 ### Example
 
+* OAuth Authentication (standardAuthorization):
 
 ```python
 import time
@@ -203,6 +210,8 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -234,7 +243,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -259,6 +268,7 @@ Delete an existing association between a channel and a market or entities
 
 ### Example
 
+* OAuth Authentication (standardAuthorization):
 
 ```python
 import time
@@ -278,6 +288,8 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -309,7 +321,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -334,6 +346,7 @@ Soft delete an existing channel
 
 ### Example
 
+* OAuth Authentication (standardAuthorization):
 
 ```python
 import time
@@ -353,6 +366,8 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -384,7 +399,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -409,6 +424,7 @@ Soft delete an existing market
 
 ### Example
 
+* OAuth Authentication (standardAuthorization):
 
 ```python
 import time
@@ -428,6 +444,8 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -459,7 +477,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -484,6 +502,7 @@ Get an existing channel
 
 ### Example
 
+* OAuth Authentication (standardAuthorization):
 
 ```python
 import time
@@ -504,6 +523,8 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -535,7 +556,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -560,6 +581,7 @@ Get an existing channel with associations
 
 ### Example
 
+* OAuth Authentication (standardAuthorization):
 
 ```python
 import time
@@ -580,6 +602,8 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -611,7 +635,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -636,6 +660,7 @@ Get an existing market
 
 ### Example
 
+* OAuth Authentication (standardAuthorization):
 
 ```python
 import time
@@ -656,6 +681,8 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -687,7 +714,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -712,6 +739,7 @@ Get an existing market with associations
 
 ### Example
 
+* OAuth Authentication (standardAuthorization):
 
 ```python
 import time
@@ -732,6 +760,8 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -763,7 +793,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -788,6 +818,7 @@ List all channels
 
 ### Example
 
+* OAuth Authentication (standardAuthorization):
 
 ```python
 import time
@@ -808,6 +839,8 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -839,7 +872,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -864,6 +897,7 @@ List all channels with associations
 
 ### Example
 
+* OAuth Authentication (standardAuthorization):
 
 ```python
 import time
@@ -884,6 +918,8 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -915,7 +951,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -940,6 +976,7 @@ List all markets
 
 ### Example
 
+* OAuth Authentication (standardAuthorization):
 
 ```python
 import time
@@ -960,6 +997,8 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -991,7 +1030,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -1016,6 +1055,7 @@ List all markets with associations
 
 ### Example
 
+* OAuth Authentication (standardAuthorization):
 
 ```python
 import time
@@ -1036,6 +1076,8 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -1067,7 +1109,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -1092,6 +1134,7 @@ Update an existing channel
 
 ### Example
 
+* OAuth Authentication (standardAuthorization):
 
 ```python
 import time
@@ -1112,6 +1155,8 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -1143,7 +1188,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -1168,6 +1213,7 @@ Update an existing market
 
 ### Example
 
+* OAuth Authentication (standardAuthorization):
 
 ```python
 import time
@@ -1188,6 +1234,8 @@ configuration = channelmanager.Configuration(
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
+
+configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -1219,7 +1267,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
