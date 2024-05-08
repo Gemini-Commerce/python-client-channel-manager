@@ -110,7 +110,7 @@ Create a new channel
 
 ### Example
 
-* OAuth Authentication (standardAuthorization):
+* Api Key Authentication (Authorization):
 
 ```python
 import time
@@ -132,7 +132,11 @@ configuration = channelmanager.Configuration(
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
 
-configuration.access_token = os.environ["ACCESS_TOKEN"]
+# Configure API key authorization: Authorization
+configuration.api_key['Authorization'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with channelmanager.ApiClient(configuration) as api_client:
@@ -164,7 +168,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
