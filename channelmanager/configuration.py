@@ -55,6 +55,25 @@ class Configuration:
       in PEM format.
 
     :Example:
+
+    API Key Authentication Example.
+    Given the following security scheme in the OpenAPI specification:
+      components:
+        securitySchemes:
+          cookieAuth:         # name for the security scheme
+            type: apiKey
+            in: cookie
+            name: JSESSIONID  # cookie name
+
+    You can programmatically set the cookie:
+
+conf = channelmanager.Configuration(
+    api_key={'cookieAuth': 'abc123'}
+    api_key_prefix={'cookieAuth': 'JSESSIONID'}
+)
+
+    The following cookie will be added to the HTTP request:
+       Cookie: JSESSIONID abc123
     """
 
     _default = None
@@ -359,12 +378,14 @@ class Configuration:
         :return: The Auth Settings information dict.
         """
         auth = {}
-        if self.access_token is not None:
+        if 'standardAuthorization' in self.api_key:
             auth['standardAuthorization'] = {
-                'type': 'oauth2',
+                'type': 'api_key',
                 'in': 'header',
                 'key': 'Authorization',
-                'value': 'Bearer ' + self.access_token
+                'value': self.get_api_key_with_prefix(
+                    'standardAuthorization',
+                ),
             }
         return auth
 
